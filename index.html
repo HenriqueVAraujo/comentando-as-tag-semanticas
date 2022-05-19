@@ -1,0 +1,127 @@
+<!--Explicando as tags semanticas mais utilizadas-->
+<!DOCTYPE html>
+<!--Doctype é o padrão para se iniciar um conteudo em html-->
+<html lang="pt-br">
+	<!--a tag html é usada no inicio e no final do conteudo, ou seja, é a tag que inicia o projeto-->
+<head>
+	<!--a tag head é apenas para o navegador interpretar ela, onde fica basicamente a mente-->
+    <meta charset="UTF-8">
+	<!-- a tag meta é usada para diversas coisas mas a mais importante é para compatibilidade de linguagem no caso nosso UTF-8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--esse meta acima é usado para compatibilidade de navegadores-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--esse meta é usado para compatibilidade de smartphones dentre outros-->
+    <link rel="stylesheet" href="style.css">
+	<!--a tag link é usada para linkarmos pastas e/ou arquivos fora do index | usamos para deixar o html de facil manutenção-->
+	<title>Recursos do HTML5</title>
+	<!--a tag title é usada para mostrar o titulo na aba do navegador-->
+</head>
+<!--aqui fechamos a tag head apos identificar todos os meta,links,dentre outros-->
+<body>
+	<!--a tag body é onde todo o escopo da janela irá aparecer-->
+	<header>
+		<!--a tag semantica header é usada para o cabeçalho-->
+		<nav>
+			<!--a tag nav é usada para a navegação do site-->
+			<ul>
+				<!--a tag ul e ol são usadas para a criação de listas não ordernadas e ordenadas-->
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Produtos</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+		<!--fechamos a nossa nav-->
+	</header>
+	<!--com o cabeçalho pronto fechamos ele-->
+	<article>
+		<!--a tag article o proprio nome diz. É usada para a criação de artigos-->
+		<h1>Recursos do HTML5</h1>
+		<!--as tags H são usadas para colocar os titulos principais do meu texto-->
+		<div>
+			<!--a tag div é usada para criar divisões ou containers-->
+			<video width="320" height="240" controls>
+				<!--a tag video é usada para incluir videos e o formato mais utilizado é mp4-->
+				<source src="video/cidade.mp4" type="video/mp4">
+			</video>
+			<!--a tag video é uma tag de abertura e fecamento-->
+		</div>
+		<div>
+			<audio controls>
+			<!--a tag audio é usada para inserir audios e o formato mais usado é o mp3-->
+				<source src="audio/music.mp3" type="audio/mpeg">
+			</audio>
+			<!--a tag audio tambem é uma tag de abertura e fechamento-->
+		</div>
+		<div>
+			<figure>
+				<!--a tag figure é usada para podermos inserir uma imagem com legenda-->
+				<img src="img/ricefield.jpg" alt="Campo de arroz">
+				<!--a tag img é usada para colocar uma imagem e caso a imagem não carrega na pagina o seu atributo alt é usado para descrever a imagem que deveria ter sido carregada-->
+				<figcaption>Um lindo campo de arroz...</figcaption>
+				<!--a tag figcaption é onde se coloca a legenda da imagem que ficara situada no seu rodape-->
+			</figure>
+		</div>
+		<div>
+			<h3>Preencha o formulário para receber novidades!</h3>
+			<form>
+				<!--a tag form é usada para criação de formularios-->
+				<label>E-mail:</label>
+				<!--a tag label é usada para descrever o que será requerido no formulario-->
+				<input type="email" name="email" required placeholder="Digite seu melhor e-mail" autofocus>
+				<!--a tag input é usada para receber do usuario os dados pedidos na label-->
+				<label>Nome:</label>
+				<input type="text" name="name" required placeholder="Digite seu nome completo">
+				<input type="submit" name="Enviar">
+				<!--temos na tag input os atributos mais usados como text, submit, email,etc para definir o type-->
+				<!--temos o placeholder usado para descrever a box de preenchimento-->
+				<!--o autofocus é usado para quando a pagina abrir o cursos já estar selecionado-->
+				<!--o required é usado para se dizer que aquele item é necessario para prosseguir-->
+			</form>
+			<!--a tag form é uma tag de abertura e fechamento-->
+		</div>
+		<div>
+			<!--a tag p é usada para todos os paragrafos do html-->
+			<p contenteditable="true">Este é um paragráfo que pode ser editado.</p>
+		</div>
+	</article>
+	<!--a tag article é uma tag de abertura e fechamento-->
+	<aside>
+		<!--a tag aside é usada para criação de um texto que irá ficar do lado do conteudo-->
+		<p>Confira os nossos produtos, <a href="#">Clicando aqui!</a></p>
+		<!--a tag A é usada para redirecionamento de links, ela funciona como uma ancora-->
+	</aside>
+	<!--aside é uma tag de abertura e fechamento-->
+	<details open="open">
+		<!--details é uma tag usada para esconder conteudos que só serão mostrados caso o usuario solicite-->
+		<summary>Cachorro</summary>
+		<p>É um mamífero de 4 patas e também é um animal doméstico.</p>
+	</details>
+	<!--details é uma tag de abertura e fechamento-->
+	<details>
+		<summary>Gato</summary>
+		<p>É um mamífero de 4 patas e também é um animal doméstico.</p>
+	</details>
+	<form>
+		<p>Animais:</p>
+		<input list="animais" name="animal">
+		<datalist id="animais">
+			<!--a tag datalist é usada para criação de box de seleção de itens-->
+			<option value="Cachorro"></option>
+			<!--a tag option é usada para inserir as opções que o usuario tera de escolha-->
+			<option value="Gato"></option>
+			<option value="Cavalo"></option>
+			<option value="Elefante"></option>
+		</datalist>
+		<!--datalist é uma tag de abertura e fechamento-->
+	</form>
+	<p>Barra de loading:</p>
+	<progress value="63" max="100">
+		<!--a tag progress é usada para desenvolver uma barra de carregamento-->
+	<footer>
+		<!--a tag footer é usada para a criação do rodape da pagina-->
+		<p>Rodapé</p>
+	</footer>
+</body>
+<!--assim encerramos o nosso corpo do html-->
+</html>
+<!--aqui apos todos os dados serem inseridos temos a ultima tag de fechamento que é o /html-->
